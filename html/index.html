@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tiny5&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link normalize.css File -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- Link awesome font -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- Link My FrameWork -->
+    <link rel="stylesheet" href="../css/framework.css" />
+    <!-- Link main.css File -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Link Tailwind Output -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <!-- Link Tailwind-auto-complete -->
+    <script src="../tailwind.config.js"></script>
+    <!-- Link Tailwind CDN Live -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="p-4 w-fit mx-auto max-w-full overflow-hidden">
+      <div class="light"></div>
+
+      <div class="score flex justify-between">
+        <span id="name">Hello:</span>
+        <span id="lives">lives left: 10</span>
+      </div>
+      <div class="cards">
+        
+      </div>
+    </main>
+    <!-- Link main.js -->
+    <script src="../js/main.js"></script>
+
+    <!-- Popup Modal -->
+    <div id="gamePopup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="bg-white rounded-lg p-8 max-w-md w-full text-center">
+        <h2 id="popupTitle" class="text-2xl font-bold mb-4"></h2>
+        <p id="popupMessage" class="mb-6"></p>
+        <audio id="popupAudio"></audio>
+        <button 
+          id="playAgainBtn"
+          class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 mr-2"
+        >
+          Play Again
+        </button>
+        <button 
+          id="closePopupBtn"
+          class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
