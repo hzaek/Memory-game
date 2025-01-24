@@ -208,6 +208,9 @@ main .cards .open .back {
   }
 }
 @media (max-width: 500px) {
+  .light{
+    display: none;
+  }
   main .cards {
     gap: 8px;
     display: grid;
